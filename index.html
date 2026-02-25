@@ -164,7 +164,7 @@
       const msg = document.getElementById('message');
 
       // BUG: desserts are not checked — fix this in Issue #1
-      if (starters.length === 0 || mains.length === 0) {
+      if (starters.length === 0 || mains.length === 0 || desserts.length === 0){
         msg.textContent = '⚠ Please select at least one item from each section.';
         msg.className = 'error';
         msg.style.display = 'block';
